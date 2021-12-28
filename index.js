@@ -157,7 +157,7 @@ async function start() {
                         if(Number(typeNetwork) == 0) {
                             network = new Network(237, 1);
                         } else {
-                            network = Perseptron(237, 237, 79, 1);
+                            network = Perseptron(237, 158, 79, 1);
                         }
                     }
                 } while(!await run(network))
