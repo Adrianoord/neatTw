@@ -28,7 +28,7 @@ async function run(network){
         mutation: methods.mutation.BAS,
         equal: true,
         provenance:2,
-        popsize: 200,
+        popsize: 20,
         elitism: 5,
         log: 10,
         error: 0.0000000001e-30,
@@ -157,7 +157,7 @@ async function start() {
                         if(Number(typeNetwork) == 0) {
                             network = new Network(237, 1);
                         } else {
-                            network = Perseptron(237, 158, 79, 1);
+                            network = Perseptron(237, 158, 158, 1);
                         }
                     }
                 } while(!await run(network))

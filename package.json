@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node --max-old-space-size=15360 index.js",
     "start2": "node splited.js",
     "start3": "node neat.js",
     "start4": "node smart.js"
