@@ -28,10 +28,10 @@ async function run(network){
         mutation: methods.mutation.BAS,
         equal: true,
         provenance:2,
-        popsize: 20,
+        popsize: 40,
         elitism: 5,
         log: 10,
-        error: 0.0000000001e-30,
+        error: 1e-80,
         iterations: 1000,
         mutationRate: 0.9,
         network: network
